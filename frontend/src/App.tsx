@@ -1,8 +1,19 @@
-import { NavBar } from './components/navbar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Navbar } from './components/navbar'
+import { Form } from './pages/form'
+import { Listing } from './pages/listing'
 
 function App() {
   return (
-    <NavBar />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Listing />} />
+        <Route path="/form">
+          <Route path=":movieId" element={<Form />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

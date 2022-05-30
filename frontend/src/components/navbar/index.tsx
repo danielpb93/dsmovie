@@ -1,7 +1,7 @@
 import GithubIcon from '../../assets/img/github.svg';
 import './styles.css'
 
-export function NavBar(){
+export function Navbar(){
   return (
     <header>
       <nav className='container'>
