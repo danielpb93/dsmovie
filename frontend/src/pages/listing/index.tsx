@@ -1,3 +1,5 @@
-export function Listing(){
-  return <h1> listagem</h1>;
+import { Pagination } from "../../components/pagination";
+
+export function Listing() {
+  return <Pagination />;
 }
